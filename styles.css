@@ -1,0 +1,56 @@
+#section0{
+  position:       absolute;
+  left:           0px;
+  top:            0px;
+  width:          100vw;
+  height:         auto;
+  z-index:        94;
+  background:     no-repeat url("res/Layer 0/background.png");
+}
+.Слой_12 {
+  background-image: url("Слой 12.png");
+  z-index:          97;
+
+}
+.opacity{
+  width:            100vw;
+  height:           720px;
+  background:       no-repeat url("res/Layer 0/opacity.png");
+}
+.section0-0{
+  position:         relative;
+  left:             20vw;
+}
+.round_circles{
+  position:        relative;
+}
+.circle {
+  background-image: url("res/Layer 0/Layer 8.png");
+  position:         absolute;
+  left:             -57px;
+  top:              105px;
+  width:            540px;
+  height:           690px;
+  z-index:          97;
+}
+.inner_circle {
+  border-radius:     50%;
+  background-image:  url("res/Layer 0/Layer5.png");
+  position:          absolute;
+  left:              0px;
+  top:               162px;
+  width:             571px;
+  height:            572px;
+  z-index:           98;
+}
+.legs {
+  position:          absolute;
+  z-index:           99;
+  left:              -150px;
+
+}
+.pills{
+  position:          absolute;
+  
+  z-index:           99;
+}
