@@ -3,23 +3,23 @@
   left:           0px;
   top:            0px;
   width:          100vw;
-  height:         auto;
-  z-index:        94;
+  height:         75vh;
+  z-index:        4;
   background:     no-repeat url("res/Layer 0/background.png");
-}
-.Слой_12 {
-  background-image: url("Слой 12.png");
-  z-index:          97;
-
 }
 .opacity{
   width:            100vw;
-  height:           720px;
+  height:           75vh;
   background:       no-repeat url("res/Layer 0/opacity.png");
 }
 .section0-0{
   position:         relative;
-  left:             20vw;
+  left:             15vw;
+}
+.group0{
+  position:         relative;
+  height:           100%;
+  width:            100%;
 }
 .round_circles{
   position:        relative;
@@ -31,7 +31,7 @@
   top:              105px;
   width:            540px;
   height:           690px;
-  z-index:          97;
+  z-index:          1;
 }
 .inner_circle {
   border-radius:     50%;
@@ -41,16 +41,99 @@
   top:               162px;
   width:             571px;
   height:            572px;
-  z-index:           98;
+  z-index:           2;
 }
 .legs {
   position:          absolute;
-  z-index:           99;
+  z-index:           3;
   left:              -150px;
 
 }
-.pills{
+.pillsImageWrapper{
   position:          absolute;
-  
-  z-index:           99;
+  top:               470px;
+  z-index:           3;
+}
+.pillsGrassImgWrapper{
+  position:          absolute;
+  top:               480px;
+  left:              260px;
+  z-index:           2;
+}
+.section0-1{
+  position:         absolute;
+  display:          flex;
+  left:             calc(20vw + 320px);
+}
+.imgAndTextPrimary{
+  display:         flex;
+  position:        relative;
+  left:            -80px;
+}
+.imgAndTextPrimary strong{
+  font-size:       26px;
+  font-family:     "Roboto";
+  color:           rgb(56, 51, 52);
+  line-height:     1.818;
+  text-align:      left;
+  margin-left:     20px;
+  top:             15px;
+  position:        relative;
+}
+.smart1{
+  height:          50px;
+}
+.smart2{
+  position:        relative;
+  height:          35px;
+  top:             30px;
+}
+.imgAndText{
+  display:          flex;
+}
+.imgAndText p {
+  position:        relative;
+  margin-left:     20px;
+  min-width:       100px;
+  line-height:     1.125;
+  max-width:       160px;
+  font-size:       18px;
+  font-family:     "Roboto";
+  color:           rgb(102, 102, 102);
+  font-style:      italic;
+  z-index:         9;
+}
+.imgAndText img{
+  height:          45px;
+  #width:          40px;
+  margin-top:      15px;
+}
+.section0-2{
+  display:         flex;
+  position:        relative;
+  left:            calc(20vw + 540px);
+  top:             100px;
+}
+.section0-2-0-text{
+  font-size: 44px;
+  font-family: "Roboto";
+  color: rgb(56, 51, 52);
+  line-height: 1;
+  text-align: left;
+  width: 303px;
+  height: 166px;
+  z-index: 159;
+}
+.section0-2-0-long-text{
+
+  font-size: 44px;
+  font-family: "Roboto";
+  color: rgb(56, 51, 52);
+  line-height: 1;
+  text-align: left;
+  width: 400px;
+  color: red;
+}
+.section0-2-0{
+  width: 270px;
 }
