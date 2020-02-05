@@ -9,7 +9,7 @@
 }
 .opacity{
   width:            100vw;
-  height:           75vh;
+  height:           750px;
   background:       no-repeat url("res/Layer 0/opacity.png");
 }
 .section0-0{
@@ -79,6 +79,7 @@
   margin-left:     20px;
   top:             15px;
   position:        relative;
+  font-weight:     900;
 }
 .smart1{
   height:          50px;
@@ -117,26 +118,47 @@
   width:           450px;
 }
 .section0-2-0-text{
-  font-size: 44px;
-  font-family: "Roboto";
-  color: rgb(56, 51, 52);
-  line-height: 1;
-  text-align: left;
-  width: 100%;
-  height: 166px;
-  z-index: 159;
+  font-size:       44px;
+  font-family:     "Roboto";
+  color:           rgb(56, 51, 52);
+  line-height:     1.5;
+  text-align:      left;
+  width:           100%;
+  height:          166px;
+  font-weight:     900;
+}
+.section0-2-0-text p{
+  font-size:            60px;
+  margin-block-start:   0px;
+  margin-block-end:     0px;
+  margin-inline-start:  0px;
+  margin-inline-end:    0px;
+  line-height:          0.7;
+}
+.underline_orange{
+  display:       inline-block;
+  border-bottom: 5px solid rgb(255, 107, 0);
+  line-height:   0.8;
+}
+.underline_green{
+  display: inline-block;
+  border-bottom: 5px solid rgb(167, 201, 61);
+  line-height:   0.8;
+}
+.underline_small{
+  border-bottom-width: 3px;
 }
 .section0-2-0{
-  width: 330px;
+  width:                400px;
 }
 .section0-2-1{
-  width: 360px;
+  width:                450px;
 }
 .subsection0{
-  display: flex;
-  flex-shrink: 1;
-  width: 100%;
-  height:            60px;
+  display:           flex;
+  flex-wrap:         wrap;
+  width:             100%;
+  height:            120px;
 }
 .greenBack {
   border-radius:     50%;
@@ -163,14 +185,14 @@
   line-height:      2.25;
   text-align:       center;
 }
-.subsection0 p {
-  font-size:       20px;
-  font-family:     "Roboto";
-  color:           rgb(68, 68, 68);
-  line-height:     1.2;
-  word-wrap: break-word;
-  margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.subsection0-text {
+  font-size:           20px;
+  font-family:         "Roboto";
+  color:               rgb(68, 68, 68);
+  line-height:         1.2;
+  word-wrap:           break-word;
+  margin-block-start:  0px;
+  margin-block-end:    0px;
+  margin-inline-start: 0px;
+  margin-inline-end:   0px;
 }
