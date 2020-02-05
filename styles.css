@@ -1,133 +1,133 @@
 #section0{
-  position:       absolute;
-  left:           0px;
-  top:            0px;
-  width:          100vw;
-  height:         750px;
-  z-index:        4;
-  background:     no-repeat url("res/Layer 0/background.png");
+  position:         absolute;
+  left:             0px;
+  top:              0px;
+  width:            100vw;
+  height:           750px;
+  z-index:          4;
+  background:       no-repeat url("res/Layer 0/background.png");
 }
 .opacity{
   width:            100vw;
   height:           750px;
   background:       no-repeat url("res/Layer 0/opacity.png");
 }
-.section0-0{
+.section0-major-photoset{
   position:         relative;
   left:             15vw;
 }
 .group0{
-  position:         relative;
-  height:           100%;
-  width:            100%;
+  position:          relative;
+  height:            100%;
+  width:             100%;
 }
 .round_circles{
-  position:        relative;
+  position:          relative;
 }
 .circle {
-  background-image: url("res/Layer 0/Layer 8.png");
-  position:         absolute;
-  left:             -57px;
-  top:              105px;
-  width:            540px;
-  height:           690px;
-  z-index:          1;
+  background-image:   url("res/Layer 0/Layer 8.png");
+  position:           absolute;
+  left:               -57px;
+  top:                105px;
+  width:              540px;
+  height:             690px;
+  z-index:            1;
 }
 .inner_circle {
-  border-radius:     50%;
-  background-image:  url("res/Layer 0/Layer5.png");
-  position:          absolute;
-  left:              0px;
-  top:               162px;
-  width:             571px;
-  height:            572px;
-  z-index:           2;
+  border-radius:       50%;
+  background-image:    url("res/Layer 0/Layer5.png");
+  position:            absolute;
+  left:                0px;
+  top:                 162px;
+  width:               571px;
+  height:              572px;
+  z-index:             2;
 }
 .legs {
-  position:          absolute;
-  z-index:           3;
-  left:              -150px;
+  position:            absolute;
+  z-index:             3;
+  left:                -150px;
 
 }
 .pillsImageWrapper{
-  position:          absolute;
-  top:               470px;
-  z-index:           3;
+  position:            absolute;
+  top:                 470px;
+  z-index:             3;
 }
 .pillsGrassImgWrapper{
-  position:          absolute;
-  top:               480px;
-  left:              260px;
-  z-index:           2;
+  position:            absolute;
+  top:                 480px;
+  left:                260px;
+  z-index:             2;
 }
-.section0-1{
-  position:         absolute;
-  display:          flex;
-  left:             calc(20vw + 320px);
+.section0-infobar{
+  position:            absolute;
+  display:             flex;
+  left:                calc(20vw + 320px);
 }
-.imgAndTextPrimary{
-  display:         flex;
-  position:        relative;
-  left:            -80px;
+.logo-and-text{
+  display:             flex;
+  position:            relative;
+  left:                -80px;
 }
-.imgAndTextPrimary strong{
-  font-size:       26px;
-  font-family:     "Roboto";
-  color:           rgb(56, 51, 52);
-  line-height:     1.818;
-  text-align:      left;
-  margin-left:     20px;
-  top:             15px;
-  position:        relative;
-  font-weight:     900;
+.logo-and-text strong{
+  font-size:           26px;
+  font-family:         "Roboto";
+  color:               rgb(56, 51, 52);
+  line-height:         1.818;
+  text-align:          left;
+  margin-left:         20px;
+  top:                 15px;
+  position:            relative;
+  font-weight:         900;
 }
 .smart1{
-  height:          50px;
+  height:              50px;
 }
 .smart2{
-  position:        relative;
-  height:          35px;
-  top:             30px;
+  position:            relative;
+  height:              35px;
+  top:                 30px;
 }
 .imgAndText{
-  display:          flex;
+  display:            flex;
 }
 .imgAndText p {
-  position:        relative;
-  margin-left:     20px;
-  min-width:       100px;
-  line-height:     1.125;
-  max-width:       160px;
-  font-size:       18px;
-  font-family:     "Roboto";
-  color:           rgb(102, 102, 102);
-  font-style:      italic;
-  z-index:         9;
+  position:            relative;
+  margin-left:         20px;
+  min-width:           100px;
+  line-height:         1.125;
+  max-width:           160px;
+  font-size:           18px;
+  font-family:         "Roboto";
+  color:               rgb(102, 102, 102);
+  font-style:          italic;
+  z-index:             9;
 }
 .imgAndText img{
-  height:          45px;
-  #width:          40px;
-  margin-top:      15px;
+  height:              45px;
+  #width:              40px;
+  margin-top:          15px;
 }
-.section0-2{
-  display:         flex;
-  flex-direction:  column;
-  position:        relative;
-  left:            calc(20vw + 540px);
-  top:             100px;
-  width:           450px;
+.section0-product-presentation{
+  display:             flex;
+  flex-direction:      row;
+  position:            relative;
+  left:                calc(20vw + 540px);
+  top:                 100px;
+  width:               450px;
 }
-.section0-2-0-text{
-  font-size:       44px;
-  font-family:     "Roboto";
-  color:           rgb(56, 51, 52);
-  line-height:     1.5;
-  text-align:      left;
-  width:           100%;
-  height:          166px;
-  font-weight:     900;
+.section0-prodPresHeader-text{
+  font-size:           44px;
+  font-family:         "Roboto";
+  color:               rgb(56, 51, 52);
+  line-height:         1.5;
+  text-align:          left;
+  width:               100%;
+  height:              166px;
+  font-weight:         900;
 }
-.section0-2-0-text p{
+.section0-prodPresHeader-text p{
   font-size:            60px;
   margin-block-start:   0px;
   margin-block-end:     0px;
@@ -136,63 +136,91 @@
   line-height:          0.7;
 }
 .underline_orange{
-  display:       inline-block;
-  border-bottom: 5px solid rgb(255, 107, 0);
-  line-height:   0.8;
+  display:             inline-block;
+  border-bottom:       5px solid rgb(255, 107, 0);
+  line-height:         0.8;
 }
 .underline_green{
-  display: inline-block;
-  border-bottom: 5px solid rgb(167, 201, 61);
-  line-height:   0.8;
+  display:             inline-block;
+  border-bottom:       5px solid rgb(167, 201, 61);
+  line-height:         0.8;
 }
 .underline_small{
   border-bottom-width: 3px;
 }
-.section0-2-0{
-  width:                400px;
-}
-.section0-2-1{
-  width:                450px;
+.section0-prodDescription{
+  width:               450px;
 }
 .subsection0{
-  display:           flex;
-  flex-wrap:         wrap;
-  width:             100%;
-  height:            120px;
+  display:             flex;
+  flex-wrap:           wrap;
+  width:               100%;
+  height:              115px;
+}
+#subsection0-arrow{
+  position:            absolute;
+  left:                25px;
+  bottom:              125px;
 }
 .greenBack {
-  border-radius:     50%;
-  background-color:  rgb(232, 237, 201);
-  position:          relative;
-  left:              0px;
-  top:               0px;
-  width:             60px;
-  height:            60px;
-  margin-right:      40px;
+  border-radius:       50%;
+  background-color:    rgb(232, 237, 201);
+  position:            relative;
+  left:                0px;
+  top:                 0px;
+  width:               60px;
+  height:              60px;
+  margin-right:        40px;
 }
 .greenCircle{
-  border-radius:    50%;
-  background-color: rgb(167, 201, 61);
-  position:         relative;
-  left:             7px;
-  top:              7px;
-  width:            46px;
-  height:           46px;
-  font-size:        20px;
-  font-family:      "Roboto";
-  color:            rgb(255, 255, 255);
-  font-weight:      bold;
-  line-height:      2.25;
-  text-align:       center;
+  border-radius:       50%;
+  background-color:    rgb(167, 201, 61);
+  position:            relative;
+  left:                7px;
+  top:                 7px;
+  width:               46px;
+  height:              46px;
+  font-size:           20px;
+  font-family:         "Roboto";
+  color:               rgb(255, 255, 255);
+  font-weight:         bold;
+  line-height:         2.25;
+  text-align:          center;
 }
 .subsection0-text {
-  font-size:           20px;
+  font-size:           22px;
   font-family:         "Roboto";
   color:               rgb(68, 68, 68);
   line-height:         1.2;
-  word-wrap:           break-word;
-  margin-block-start:  0px;
-  margin-block-end:    0px;
-  margin-inline-start: 0px;
-  margin-inline-end:   0px;
+  text-align:          left;
+}
+#section0-prodDiscount {
+
+}
+#section0-prodDiscount legend{
+  display:     flex;
+  width:       270px;
+  text-align: center;
+}
+#section0-prodDiscount fieldset{
+  border-radius: 10%;
+  width:       500px;
+  border:      10px solid rgb(168,202,63);
+  box-shadow:  0px 0px 40px 0px rgba(29, 91, 152, 0.1);
+}
+#section0-prodDiscount-legContent{
+  display:             flex;
+
+}
+.Rounded_Rectangle_1_copy {
+  background-image: -moz-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
+  box-shadow: 0px 0px 40px 0px rgba(29, 91, 152, 0.1);
+  position: absolute;
+  left: 1595px;
+  top: 121px;
+  width: ;
+  height: 553px;
+  z-index: 104;
 }
