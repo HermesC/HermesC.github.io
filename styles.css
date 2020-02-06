@@ -1,5 +1,11 @@
 :root{
+  --form-submit-width: 228px;
+  --section0-height:   750px;
+  --section0-width:    1170px;
+}
 
+body{
+  width: 100vw;
 }
 .flex-column-content{
   display:            flex;
@@ -7,17 +13,28 @@
   flex-grow:          0.5;
 }
 #section0{
-  position:         absolute;
+  position:         relative;
+  margin:           auto;
   left:             0px;
   top:              0px;
-  width:            100vw;
-  height:           750px;
+  width:            var(--section0-width);
+  height:           var(--section0-height);
   z-index:          4;
   background:       no-repeat url("res/Layer 0/background.png");
 }
+#section0::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  background: url("res/Layer 0/waves.png") no-repeat;
+  left: 0;
+  z-index: 1;
+  bottom: 63px;
+}
 .opacity{
-  width:            100vw;
-  height:           750px;
+  width:            var(--section0-width);
+  height:           var(--section0-height);
   background:       no-repeat url("res/Layer 0/opacity.png");
 }
 .section0-major-photoset{
@@ -62,11 +79,26 @@
   top:                 470px;
   z-index:             3;
 }
-.pillsGrassImgWrapper{
+.pillsPrice{
   position:            absolute;
-  top:                 480px;
-  left:                260px;
-  z-index:             2;
+  z-index:             9;
+  font-size:           34px;
+  font-weight:         700;
+  color:               white;
+  font-family:         'Roboto', sans-serif;
+}
+.pillsPricePos-1{
+  left:                 343px;
+}
+.pillsPricePos-2{
+  top:                  132px;
+  left:                 450px;
+}
+.pillsGrassImgWrapper{
+  position:             absolute;
+  top:                  480px;
+  left:                 260px;
+  z-index:              2;
 }
 .section0-infobar{
   position:            absolute;
@@ -203,6 +235,7 @@
   text-align:          left;
 }
 #section0-prodDiscount {
+  width:     258px;
 }
 #section0-prodDiscount-text{
   top: 10px;
@@ -217,22 +250,19 @@
   margin-bottom:      70px;
 }
 legend{
-  position:           absolute;
-  margin-top:         -40px;
-  margin-left:        35px;
-  padding-top:        40px;
-
-  display:            flex;
-  width:              170px;
+  margin:              auto;
+  padding:             0px;
+  margin-bottom:       40px;
+}
+#section0-prodDiscount-text-wrapper{
+  position:           relative;
   border-bottom:      7px solid #a8ca3f;
   border-left:        7px solid #a8ca3f;
   border-right:       7px solid #a8ca3f;
-  border-radius:      7px;
-  z-index:            3;
-}
-#section0-prodDiscount-text-wrapper{
-  left:               5px;
-  z-index:            9;
+  border-radius:      0px 0px 15px 15px;
+  padding:            0px 10px 10px;
+  top:                18.5px;
+  background-color:   #f3f9ff
 }
 #section0-prodDiscount-text{
   display:            flex;
@@ -240,15 +270,13 @@ legend{
   left:               0px;
   position:           relative;
   top:                10px;
-  width:              174px;
+  width:              auto;
   height:             27px;
   z-index:            9;
 }
 #section0-prodDiscount fieldset{
   overflow:           hidden;
   background-color:   #FFFFFF;
-  margin-top:         10px;
-  margin-left:        20px;
   border:             7px solid #a8ca3f;
   border-radius:      15px;
   min-width:          220px;
@@ -260,6 +288,8 @@ legend{
   display:            flex;
 }
 #section0-discountDateExpire{
+  position:           relative;
+
   font-size:          20px;
   font-family:        "Roboto";
   color:              rgb(0, 0, 0);
@@ -305,28 +335,61 @@ legend{
   text-align: center;
 }
 .formPhoto{
-  width:       15px;
-  position:    absolute;
+  width:       19px;
+  height:      23px;
+  position:    relative;
+  top:         42px;
+  left:        20px;
 }
-.Shape_1 {
-  background-color: rgb(232, 120, 69);
-  position: absolute;
-  left: 1640px;
-  top: 424px;
-  width: 21px;
-  height: 24px;
-  z-index: 128;
+.form-input{
+    display: block;
+    width: auto;
+    background-color: rgb(238, 242, 247);
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 32px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 25px 25px 20px 55px;
 }
+.form-submit-wrapper{
+      background: linear-gradient(to right, #ffbe02, #ffcc02);
+      border-radius: 32px;
+      width:   var(--form-submit-width);
+      padding: 4px;
+      align-self: center;
+}
+.form-submit{
+    font-size: 28px;
+    font-weight: 700;
+    padding:9px 13px;
+    line-height: 15px;
+    border: 2px solid #ffd24e;
+    background: linear-gradient(to right, #ffbe02, #ffcc02);
+    border-radius: 32px;
+    width:           var(--form-submit-width);
+    cursor: url(../img/Cursor.cur), pointer;
+}
+.form-small-text{
+  font-size: 16px;
+}
+.form-remains-text{
 
-.Rounded_Rectangle_4 {
-  border-radius: 5px;
-  background-image: -moz-linear-gradient( 0deg, rgb(255,188,2) 0%, rgb(255,206,2) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(255,188,2) 0%, rgb(255,206,2) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(255,188,2) 0%, rgb(255,206,2) 100%);
-  position: absolute;
-  left: 1733px;
-  top: 273px;
-  width: 106px;
-  height: 40px;
-  z-index: 114;
+}
+.form-green-text{
+  color:  #a8ca3f;
+}
+.form-dataProtection{
+background-color:    #eef2f7;
+width:               100%;
+padding-right: 50px;
+margin-left:   -30px;
+padding-bottom: 20px;
+padding-left: 30px;
+}
+.form-dataProtImg{
+
 }

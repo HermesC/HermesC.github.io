@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--Test for Atom pushing procedure-->
-<html>
+<html lang="ru">
 <head>
 <title>
-
+Микоцин - выполнил Кирилл Рыбальченко
 </title>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -26,6 +26,8 @@
           </div>
 
           <div class="pillsImageWrapper">
+            <span class="pillsPricePos-1 pillsPrice">299 &#8381;</span>
+            <span class="pillsPricePos-2 pillsPrice">299 &#8381;</span>
               <image src="res/Layer 0/pills.png" class="pills">
               </image>
          </div>
@@ -105,15 +107,13 @@
         </div>-->
         <form action="handler.php">
             <fieldset>
-              <div id="legend-wrapper">
               <legend>
                 <div id="section0-prodDiscount-text-wrapper">
                   <div id="section0-prodDiscount-text"><img src="res/Layer 0/forFreeLogo.png"><span>Бесплатно</span></div>
                 </div>
               </legend>
-            </div>
               <div id="section0-prodDiscount-legContent" class="flex-column-content">
-                <div id="section0-discountDateExpire">Успейте заказать со скидкой до 10.09.2018</div>
+                <div id="section0-discountDateExpire">Успейте заказать<br> со скидкой<br> до 10.09.2018</div>
                 <div id="section0-priceText">
                   <div id="oldPrice" class="flex-column-content">
                     <div class="oldPriceHeader">старая цена</div>
@@ -125,10 +125,13 @@
                   </div>
                 </div>
                 <img class="formPhoto"src="res/Layer 0/nameImg.png">
-                <input type="text"></input>
+                <input class="form-input"name="name" required type="text" placeholder="Имя"></input>
                 <img class="formPhoto"src="res/Layer 0/phoneImg.png">
-                <input type="text"></input>
+                <input class="form-input"name="name" required type="text" placeholder="Телефон"></input>
+                <div class="form-submit-wrapper"><button class="form-submit">Заказать <br><span class="form-small-text">со скидкой</span></button></div>
               </div>
+              <span class="form-remains-text">Осталось <span class="form-green-text">10</span> упаковок<br> со скидкой</span>
+              <div class="form-dataProtection"><img class="form-dataProtImg" src="res/Layer 0/dataProtection.png">Ваши данные защищены!</div>
             </fieldset>
       </form>
       </div>
