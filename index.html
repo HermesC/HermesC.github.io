@@ -103,15 +103,34 @@
         <!--<div id="section0-prodDiscount-text-wrapper">
           <div id="section0-prodDiscount-text"><img src="res/Layer 0/forFreeLogo.png"><span>Бесплатно</span></div>
         </div>-->
-        <fieldset>
-          <legend>
-            <div id="section0-prodDiscount-text-wrapper">
-              <div id="section0-prodDiscount-text"><img src="res/Layer 0/forFreeLogo.png"><span>Бесплатно</span></div>
+        <form action="handler.php">
+            <fieldset>
+              <div id="legend-wrapper">
+              <legend>
+                <div id="section0-prodDiscount-text-wrapper">
+                  <div id="section0-prodDiscount-text"><img src="res/Layer 0/forFreeLogo.png"><span>Бесплатно</span></div>
+                </div>
+              </legend>
             </div>
-          </legend>
-          <div id="section0-prodDiscount-legContent">
-          </div>
-        </fieldset>
+              <div id="section0-prodDiscount-legContent" class="flex-column-content">
+                <div id="section0-discountDateExpire">Успейте заказать со скидкой до 10.09.2018</div>
+                <div id="section0-priceText">
+                  <div id="oldPrice" class="flex-column-content">
+                    <div class="oldPriceHeader">старая цена</div>
+                    <div class="oldPriceText"><img id="crossedPriceImg" src="res/Layer 0/crossedPrice.png" alt="Server error, couldn't load the image:(">918 &#8381;</div>
+                  </div>
+                  <div ="newPrice" class="flex-column-content">
+                    <div class="newPriceHeader">новая цена</div>
+                    <div id="newPriceText"><strong>459 &#8381;</strong></div>
+                  </div>
+                </div>
+                <img class="formPhoto"src="res/Layer 0/nameImg.png">
+                <input type="text"></input>
+                <img class="formPhoto"src="res/Layer 0/phoneImg.png">
+                <input type="text"></input>
+              </div>
+            </fieldset>
+      </form>
       </div>
     </section>
 
