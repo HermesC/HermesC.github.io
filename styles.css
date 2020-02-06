@@ -1,6 +1,6 @@
 #section0{
   position:         absolute;
-  left:             0px;
+  left:             180px;
   top:              0px;
   width:            100vw;
   height:           750px;
@@ -195,32 +195,51 @@
   text-align:          left;
 }
 #section0-prodDiscount {
-
 }
-#section0-prodDiscount legend{
-  display:     flex;
-  width:       270px;
-  text-align: center;
+#section0-prodDiscount-text{
+  top: 10px;
+    width: 174px;
+    height: 27px;
+        flex-direction: row;
+}
+legend{
+  position:           absolute;
+  margin-top:         -20px;
+  margin-left:        35px;
+  padding-top:        40px;
+  display:            flex;
+  width:              170px;
+  border-bottom:      7px solid #a8ca3f;
+  border-left:        7px solid #a8ca3f;
+  border-right:       7px solid #a8ca3f;
+  border-radius:      7px;
+  z-index:            3;
+}
+#section0-prodDiscount-text-wrapper{
+  left:               5px;
+}
+#section0-prodDiscount-text{
+  display:            flex;
+  flex-direction:     row;
+  left:               519px;
+  position:           absolute;
+  top:                10px;
+  width:              174px;
+  height:             27px;
 }
 #section0-prodDiscount fieldset{
-  border-radius: 10%;
-  width:       500px;
-  border:      10px solid rgb(168,202,63);
-  box-shadow:  0px 0px 40px 0px rgba(29, 91, 152, 0.1);
+  overflow:           hidden;
+  background-color:   #FFFFFF;
+  padding:            0px;
+  margin-top:         10px;
+  margin-left:        20px;
+  border:             7px solid #a8ca3f;
+  border-radius:      15px;
+  min-width:          270px;
+  text-align:         center;
+  position:           relative;
+  height:             100%;
 }
 #section0-prodDiscount-legContent{
-  display:             flex;
-
-}
-.Rounded_Rectangle_1_copy {
-  background-image: -moz-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
-  background-image: -webkit-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
-  background-image: -ms-linear-gradient( 180deg, rgb(168,202,63) 0%, rgb(227,117,67) 100%);
-  box-shadow: 0px 0px 40px 0px rgba(29, 91, 152, 0.1);
-  position: absolute;
-  left: 1595px;
-  top: 121px;
-  width: ;
-  height: 553px;
-  z-index: 104;
+  display:            flex;
 }
