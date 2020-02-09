@@ -1,7 +1,7 @@
 :root{
   --form-submit-width: 228px;
-  --section0-height:   750px;
-  --section0-width:    1170px;
+  --section-height:   750px;
+  --section-width:    1170px;
   --section0-dynamic-margin: 350px;
 }
 *{
@@ -14,57 +14,64 @@
   flex-direction:     column;
   flex-grow:          0.5;
 }
+.bold{
+  font-weight: 700;
+}
 body{
+  font-family:         "Roboto", sans-serif;
   margin: 0;
 }
 #section0{
-  background-position: -300px 0;
-  height: var(--section0-height);
-  background:         url("res/Layer 0/background.png");
-  background-size: cover;
-  width: 100%;
+  height:              var(--section-height);
+  background:          url("res/Layer 0/background.png");
+  background-position: -500px 0;
+  background-size:     cover;
+  width:               100%;
+  background-color:    #f3f9ff;
+  margin-bottom:       120px;
 }
 .section0-container{
-  position:       relative;
-  max-width:      var(--section0-width);
-  margin:         0px auto;
+  position:           relative;
+  max-width:          var(--section-width);
+  margin:             0px auto;
+  height:             100%;
 }
-#section0::after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 109px;
-  background: url("res/Layer 0/waves.png");
-  z-index: 1;
-  transform:  scaleX(-1);
-/* transform: rotate(180deg); */
-  bottom: 80px;
+.section0-container::after{
+  content:            '';
+  position:           absolute;
+  width:              100vw;
+  height:             109px;
+  background:         url("res/Layer 0/waves.png");
+  z-index:            1;
+  transform:          scaleX(2);
+  bottom:             -90px;
 }
 .opacity{
-  width:            100%;
-  height:           var(--section0-height);
-  background:       url("res/Layer 0/opacity.png");
+  width:              100%;
+  height:             100%;
+  background:         url("res/Layer 0/opacity.png") no-repeat;
+  background-size:    100% 100%;
 }
 .section0-major-photoset{
-  position:         relative;
-  left:             -100px;
+  position:           relative;
+  left:               -100px;
 }
 .group0{
-  position:          relative;
-  height:            100%;
-  width:             100%;
+  position:            relative;
+  height:              100%;
+  width:               100%;
 }
 .round_circles{
-  position:          relative;
+  position:            relative;
 }
 .circle {
-  background-image:   url("res/Layer 0/Layer 8.png");
-  position:           absolute;
-  left:               -57px;
-  top:                105px;
-  width:              540px;
-  height:             690px;
-  z-index:            1;
+  background-image:    url("res/Layer 0/Layer 8.png");
+  position:            absolute;
+  left:                -57px;
+  top:                 105px;
+  width:               540px;
+  height:              690px;
+  z-index:             1;
 }
 .inner_circle {
   border-radius:       50%;
@@ -91,9 +98,7 @@ body{
   position:            absolute;
   z-index:             9;
   font-size:           34px;
-  font-weight:         700;
   color:               white;
-  font-family:         'Roboto', sans-serif;
 }
 .pillsPricePos-1{
   left:                 343px;
@@ -119,7 +124,7 @@ body{
   display:             flex;
   justify-content:     space-around;
   white-space: nowrap;
-  margin-left:         70px;
+  margin-left:         100px;
   top:                 0px;
   height:              40px;
 }
@@ -128,18 +133,15 @@ body{
   top:                 0px;
   display:             flex;
   position:            relative;
-  margin-left:         30px;
 }
-.logo-and-text strong{
+.logo-and-text span{
   font-size:           26px;
-  font-family:         "Roboto";
   color:               rgb(56, 51, 52);
   line-height:         1.818;
   text-align:          left;
   margin-left:         20px;
   top:                 15px;
   position:            relative;
-  font-weight:         900;
 }
 .smart1{
   height:              50px;
@@ -258,6 +260,7 @@ body{
 }
 #section0-prodDiscount-legContent{
   display:            flex;
+  padding: 10px;
 }
 #legend-wrapper{
   margin-bottom:      70px;
@@ -268,24 +271,25 @@ legend{
   margin-bottom:       40px;
 }
 #section0-prodDiscount-text-wrapper{
-  position:           relative;
-  border-bottom:      7px solid #a8ca3f;
-  border-left:        7px solid #a8ca3f;
-  border-right:       7px solid #a8ca3f;
-  border-radius:      0px 0px 15px 15px;
-  padding:            0px 10px 10px;
-  top:                18.5px;
-  background-color:   #f3f9ff
+    position: relative;
+    border-bottom: 7px solid #a8ca3f;
+    border-left: 7px solid #a8ca3f;
+    border-right: 7px solid #a8ca3f;
+    border-radius: 0px 0px 15px 15px;
+    padding: 12px 10px 10px;
+    top: 18px;
+    background-color: #f3f9ff;
 }
 #section0-prodDiscount-text{
-  display:            flex;
-  flex-direction:     row;
-  left:               0px;
-  position:           relative;
-  top:                10px;
-  width:              auto;
-  height:             27px;
-  z-index:            9;
+  display: flex;
+flex-direction: row;
+left: 0px;
+position: relative;
+top: -12px;
+width: auto;
+height: 27px;
+z-index: 9;
+height: 14px;
 }
 #section0-prodDiscount fieldset{
   overflow:           hidden;
@@ -296,6 +300,7 @@ legend{
   text-align:         center;
   position:           relative;
   height:             100%;
+  padding:            0px;
 }
 #section0-priceText{
   display:            flex;
@@ -367,6 +372,7 @@ legend{
     border-image: initial;
     outline: none;
     padding: 25px 25px 20px 55px;
+    margin-bottom: -12px;
 }
 .form-submit-wrapper{
       background: linear-gradient(to right, #ffbe02, #ffcc02);
@@ -374,6 +380,7 @@ legend{
       width:   var(--form-submit-width);
       padding: 4px;
       align-self: center;
+      margin-top: 25px;
 }
 .form-submit{
     font-size: 28px;
@@ -396,13 +403,64 @@ legend{
   color:  #a8ca3f;
 }
 .form-dataProtection{
-background-color:    #eef2f7;
-width:               100%;
-padding-right: 50px;
-margin-left:   -30px;
-padding-bottom: 20px;
-padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 5px;
+  background-color:    #eef2f7;
+  width:               100%;
 }
 .form-dataProtImg{
-
+}
+####################################################
+#section1{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  position:relative;
+  width: var(--section-width);
+  height: var(--section-height);
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section1-title{
+  font-size: 48px;
+  color: rgb(56, 51, 52);
+  line-height: 48px;
+}
+h2{
+  margin-bottom: 0px;
+}
+.section1-subtitle{
+  position: relative;
+    font-size: 24px;
+    color: rgb(43, 40, 40);
+    font-weight: bold;
+    line-height: 1.167;
+}
+#section1-fungus-consequences{
+  display: flex;
+  justify-content: space-around;
+}
+.fungus-subsection{
+  display: flex;
+  flex-direction: column;
+}
+.fungus-subsection-visual{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.fungus-img-caption{
+  font-size: 22px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
