@@ -3,6 +3,7 @@
   --section-height:   750px;
   --section-width:    1170px;
   --section0-dynamic-margin: 350px;
+  --legend-container-height: 60px;
 }
 html{
   overflow-x: hidden;
@@ -669,15 +670,30 @@ background-color: rgb(236, 91, 25);
   #z-index: 4;
 }
 .legend-border{
-  position: relative;
-  top: 0px;
+  position:     relative;
+  height:             var(--legend-container-height);
+  top:           calc((var(--legend-container-height) / 2) - 2.5px);
   border-bottom: 5px solid rgb(246, 77, 1);
   border-left: 5px solid rgb(246, 77, 1);
   border-right: 5px solid rgb(246, 77, 1);
-  border-radius: 50%;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  overflow-y: visible;
+}
+.legend-border-green{
+  position:     relative;
+  height:             var(--legend-container-height);
+  top:           calc((var(--legend-container-height) / 2) - 2.5px);
+  border-bottom: 5px solid rgb(98, 189, 31);
+  border-left: 5px solid rgb(98, 189, 31);
+  border-right: 5px solid rgb(98, 189, 31);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  overflow-y: visible;
 }
 .section3-measures-img{
-  height:             80px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: -20px;
 }
 .border-color-light-red{
   border-color:       rgb(246, 77, 1);
