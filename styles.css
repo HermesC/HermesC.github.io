@@ -701,3 +701,7 @@ background-color: rgb(236, 91, 25);
 .border-color-green{
   border-color: rgb(98, 189, 31);
 }
+.folk-medicine{
+  position: relative;
+  text-align: center;
+}
