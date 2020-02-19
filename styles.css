@@ -639,6 +639,7 @@ background-color: rgb(236, 91, 25);
   position:           relative;
   margin-top:         50px;
   width:              100%;
+  margin-bottom: 20px;
 }
 .section3-headline{
   width:              100%;
@@ -721,12 +722,21 @@ background-color: rgb(236, 91, 25);
   height: 96px;
   width: 867px;
 }
-.Прямоугольник__скругл__углы_1 {
-  background-image: url("Прямоугольник, скругл. углы 1.png");
+#section4{
+  display: flex;
+  flex-direction: column;
+  padding:      60px;
+  height: var(--section-height);
+  width: 100vw;
+  background-image: url('./res/Layer 2/background.png');
+}
+#section4::before{
   position: absolute;
-  left: 847px;
-  top: 3604px;
-  width: 873px;
-  height: 102px;
-  z-index: 235;
+  left: 0px;
+  margin-top: -80px;
+  content: "";
+  width:100%;
+  height: 60px;
+  background-image: url("./res/Layer 0/waves.png");
+  transform: rotateX(180deg);
 }
