@@ -705,3 +705,28 @@ background-color: rgb(236, 91, 25);
   position: relative;
   text-align: center;
 }
+.section3-subheader{
+  margin-top: 32px;
+  background: linear-gradient(to left, #62bd1f, #f64d01);
+  border-radius: 15px;
+  height: 102px;
+  width: 873px;
+}
+.section3-subheader-filler{
+  left: 3px;
+  top: 3px;
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  height: 96px;
+  width: 867px;
+}
+.Прямоугольник__скругл__углы_1 {
+  background-image: url("Прямоугольник, скругл. углы 1.png");
+  position: absolute;
+  left: 847px;
+  top: 3604px;
+  width: 873px;
+  height: 102px;
+  z-index: 235;
+}
