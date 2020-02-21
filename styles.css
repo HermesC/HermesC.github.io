@@ -7,6 +7,7 @@
 }
 html{
   overflow-x: hidden;
+  font-family:'Roboto', sans-serif;
 }
 *{
     -webkit-box-sizing: border-box;
@@ -20,6 +21,14 @@ html{
 }
 .bold{
   font-weight:         700;
+}
+.headline{
+  font-size: 48px;
+  line-height: 48px;
+}
+.orange-text{
+  color: #fa4f01;
+}
 }
 body{
   font-family:        "Roboto", sans-serif;
@@ -439,11 +448,6 @@ height: 14px;
   margin-right: auto;
   text-align: center;
 }
-.section1-title{
-  font-size: 48px;
-  color: rgb(56, 51, 52);
-  line-height: 48px;
-}
 h2{
   margin-bottom: 0px;
 }
@@ -572,12 +576,6 @@ background-color: rgb(236, 91, 25);
 
   transform: rotateX(180deg);
   top:                0px;
-}
-.section-headline{
-  position:          relative;
-  margin-top:        20px;
-  font-size:         48px;
-  line-height:       48px;
 }
 .section2-false-medicines{
   display:           flex;
@@ -743,38 +741,46 @@ background-color: rgb(236, 91, 25);
 .instructions{
   height: 439px;
   display: flex;
-  justify-content: space-between;
+  margin: 0px auto;
 }
 .instructions-explain{
   height: 100%;
   display: flex;
+  margin-top: -20px;
+  margin-left: 27px;
   flex-direction: column;
   justify-content: space-between;
 }
 .instructions-explain-cell{
   height: 250px;
+  display: flex;
 }
 .instructions-explain img{
-  position: relative;
-  margin-top: auto;
-  margin-bottom: auto;
-  border: rgb(246, 77, 1) solid 5px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 0px 7px rgb(229, 208, 185);
+  position:       relative;
+  margin:         auto;
 }
-
-.Ellipse_5_copy_2 {
-  border-radius: 50%;
-  background-color: rgb(229, 208, 185);
-  opacity: 0.502;
-  position: absolute;
-  left: 1298px;
-  top: 4017px;
-  width: 135px;
-  height: 135px;
-  z-index: 215;
+.instructions-img{
+  display:        flex;
+  width:          100px;
+  height:         100px;
+  border:         rgb(246, 77, 1) solid 5px;
+  border-radius:  50%;
+  box-shadow:     0px 0px 0px 7px rgb(229, 208, 185);
+  margin-bottom:  auto;
+  margin-top:     auto;
 }
 .explain-text {
-  position: relative;
-  vertical-align: middle;
+  position:       relative;
+  margin-left:    30px;
+  margin-bottom:  auto;
+  margin-top:     auto;
+}
+.explain-text::before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -19px;
+  width: 20px;
+  height: 3px;
+  background-color: rgb(123, 191, 28);
 }
