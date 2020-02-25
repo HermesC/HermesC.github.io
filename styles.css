@@ -3,7 +3,32 @@
   --section-height:   750px;
   --section-width:    1170px;
   --section0-dynamic-margin: 350px;
-  --legend-container-height: 60px;
+  --legend-container-height: 46px;
+}
+.vertical-center{
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.text-44px{
+  font-size: 44px;
+}
+.text-27px{
+  font-size: 27px;
+}
+.text-24px{
+  font-size: 24px;
+}
+.text-22px{
+  font-size: 22px;
+}
+.text-20px{
+  font-size: 20px;
+}
+.text-18px{
+  font-size: 18px;
+}
+p{
+  margin-bottom: 10px;
 }
 html{
   overflow-x: hidden;
@@ -11,7 +36,7 @@ html{
 }
 *{
     -webkit-box-sizing: border-box;
-    /* box-sizing: border-box; */
+    margin: 0px;
     box-sizing: border-box;
 }
 .flex-column-content{
@@ -31,7 +56,6 @@ html{
 }
 }
 body{
-  font-family:        "Roboto", sans-serif;
   margin:              0;
   width:               100vw;
 }
@@ -78,6 +102,9 @@ body{
   position:            relative;
   height:              100%;
   width:               100%;
+}
+.section0-product-presentation-header{
+  width: 550px;
 }
 .round_circles{
   position:            relative;
@@ -141,7 +168,7 @@ body{
 .infobar-list{
   display:             flex;
   justify-content:     space-around;
-  white-space: nowrap;
+  white-space:         nowrap;
   margin-left:         100px;
   top:                 0px;
   height:              40px;
@@ -149,6 +176,7 @@ body{
 .logo-and-text{
   left:                0px;
   top:                 0px;
+  margin-bottom: 20px;
   display:             flex;
   position:            relative;
   z-index:             9;
@@ -177,9 +205,8 @@ body{
 .imgAndText p {
   margin:              0px 10px 0px 15px;
   font-size:           17px;
-  font-family:         "Roboto";
   color:               #666666;
-  #font-style:          italic;
+  font-style:          italic;
   padding: 0px;
 }
 .section0-product-presentation{
@@ -191,14 +218,9 @@ body{
   width:               450px;
 }
 .section0-prodPresHeader-text{
-  font-size:           44px;
-  font-family:         "Roboto";
   color:               rgb(56, 51, 52);
   line-height:         1.5;
-  text-align:          left;
-  width:               100%;
-  height:              166px;
-  font-weight:         900;
+  font-weight:         800;
 }
 .section0-prodPresHeader-text p{
   font-size:            60px;
@@ -206,7 +228,8 @@ body{
   margin-block-end:     0px;
   margin-inline-start:  0px;
   margin-inline-end:    0px;
-  line-height:          0.7;
+  line-height:          0.8;
+  margin-top:           1px;
 }
 .underline_orange{
   display:             inline-block;
@@ -255,7 +278,6 @@ body{
   width:               46px;
   height:              46px;
   font-size:           20px;
-  font-family:         "Roboto";
   color:               rgb(255, 255, 255);
   font-weight:         bold;
   line-height:         2.25;
@@ -263,7 +285,6 @@ body{
 }
 .subsection0-text {
   font-size:           22px;
-  font-family:         "Roboto";
   color:               rgb(68, 68, 68);
   line-height:         1.2;
   text-align:          left;
@@ -326,9 +347,7 @@ height: 14px;
 }
 #section0-discountDateExpire{
   position:           relative;
-
   font-size:          20px;
-  font-family:        "Roboto";
   color:              rgb(0, 0, 0);
   line-height:        1.1;
   text-align:         center;
@@ -341,7 +360,6 @@ height: 14px;
 .oldPriceText {
   left:               5px;
   font-size:          34px;
-  font-family:        "Roboto";
   color:              rgb(11, 11, 11);
   flex-grow:          0.5;
   line-height:        0.706;
@@ -350,7 +368,6 @@ height: 14px;
 #newPriceText {
   flex-grow:         0.5;
   font-size:         34px;
-  font-family:       "Roboto";
   color:             rgb(0, 0, 0);
   line-height:       0.706;
   background-color:  rgb(255,188,2);
@@ -359,14 +376,12 @@ height: 14px;
 }
 .oldPriceHeader {
   font-size:         14px;
-  font-family:       "Roboto";
   color:             rgb(102, 102, 102);
   line-height:       1.714;
   text-align:        center;
 }
 .newPriceHeader{
   font-size: 14px;
-  font-family: "Roboto";
   color: rgb(0, 0, 0);
   line-height: 1.714;
   text-align: center;
@@ -456,7 +471,7 @@ h2{
     font-size: 24px;
     color: rgb(43, 40, 40);
     font-weight: bold;
-    line-height: 1.167;
+    line-height: 2.5;
 }
 #section1-fungus-consequences{
   display: flex;
@@ -531,7 +546,7 @@ background-color: rgb(236, 91, 25);
   border-radius: 15px;
   border-color: rgb(244, 211, 187);
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 200px;
+  margin-top: 80px;
   width: 1500px;
 }
 .statistics-text{
@@ -547,7 +562,7 @@ background-color: rgb(236, 91, 25);
   position: relative;
   background: url('res/Layer 2/background.png') no-repeat;
   width: 100%;
-  height: calc(var(--section-height) + 418px);
+  height: calc(var(--section-height) + 318px);
   background-size: 100% 100%;
 }
 .section2-wrapper{
@@ -598,6 +613,7 @@ background-color: rgb(236, 91, 25);
 }
 .false-medicines-content{
   width:           100%;
+  margin-top: -30px;
 }
 .false-medicines-decoration{
   margin-top:       15px;
@@ -651,13 +667,15 @@ background-color: rgb(236, 91, 25);
 .section3-measures{
   display:            flex;
   justify-content:    center;
+  margin-top: 50px;
 }
 .section3-measures-fieldset{
   border-style:       solid;
   outline:            none;
   margin-left:        20px;
   margin-right:       20px;
-  width:              250px;
+  width:              373px;
+  height:             330px;
   border-radius:      15px;
   border-width:       5px;
 }
@@ -670,6 +688,7 @@ background-color: rgb(236, 91, 25);
 }
 .legend-border{
   position:     relative;
+  width:        105px;
   height:             var(--legend-container-height);
   top:           calc((var(--legend-container-height) / 2) - 2.5px);
   border-bottom: 5px solid rgb(246, 77, 1);
@@ -680,6 +699,7 @@ background-color: rgb(236, 91, 25);
 }
 .legend-border-green{
   position:     relative;
+  width:        105px;
   height:             var(--legend-container-height);
   top:           calc((var(--legend-container-height) / 2) - 2.5px);
   border-bottom: 5px solid rgb(98, 189, 31);
@@ -690,9 +710,27 @@ background-color: rgb(236, 91, 25);
 }
 .section3-measures-img{
   position: relative;
-  width: 50px;
-  height: 50px;
-  top: -20px;
+  z-index: -1;
+}
+.section3-text{
+  line-height: 1.5;
+}
+.measures-img-1{
+  top: -50px;
+  width: 105px;
+  height: 65px;
+}
+.measures-img-2{
+  top: -75px;
+  left: -20px;
+  width: 141px;
+  height: 105px;
+}
+.measures-img-3{
+  top: -27px;
+    left: 8px;
+  height: 44px;
+  width: 77px;
 }
 .border-color-light-red{
   border-color:       rgb(246, 77, 1);
@@ -703,6 +741,8 @@ background-color: rgb(236, 91, 25);
 .folk-medicine{
   position: relative;
   text-align: center;
+  top: -14px;
+  line-height: 1;
 }
 .section3-subheader{
   margin-top: 32px;
@@ -711,14 +751,17 @@ background-color: rgb(236, 91, 25);
   height: 102px;
   width: 873px;
 }
+
 .section3-subheader-filler{
-  left: 3px;
-  top: 3px;
+  display: flex;
+  justify-content: center;
+  left: 5px;
+  top: 5px;
   position: relative;
   background-color: white;
   border-radius: 12px;
-  height: 96px;
-  width: 867px;
+  height: 92px;
+  width: 863px;
 }
 #section4{
   display: flex;
@@ -738,7 +781,11 @@ background-color: rgb(236, 91, 25);
   background-image: url("./res/Layer 0/waves.png");
   transform: rotateX(180deg);
 }
+.section4-text{
+  margin-bottom: 80px;
+}
 .instructions{
+  margin-top: 30px;
   height: 439px;
   display: flex;
   margin: 0px auto;
@@ -776,11 +823,11 @@ background-color: rgb(236, 91, 25);
   margin-top:     auto;
 }
 .explain-text::before{
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: -19px;
-  width: 20px;
-  height: 3px;
+  content:          '';
+  position:         absolute;
+  left:             0px;
+  top:              -19px;
+  width:            20px;
+  height:           3px;
   background-color: rgb(123, 191, 28);
 }
