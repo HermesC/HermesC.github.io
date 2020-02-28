@@ -1,0 +1,108 @@
+#section3{
+  position:           relative;
+  margin-top:         50px;
+  width:              100%;
+  margin-bottom: 20px;
+}
+.section3-headline{
+  width:              100%;
+}
+.margin-bottom{
+  line-height:        2;
+}
+.thin{
+  font-weight:        100;
+}
+.section3-measures{
+  display:            flex;
+  justify-content:    center;
+  margin-top: 50px;
+}
+.section3-measures-fieldset{
+  border-style:       solid;
+  outline:            none;
+  margin-left:        20px;
+  margin-right:       20px;
+  width:              373px;
+  height:             330px;
+  border-radius:      15px;
+  border-width:       5px;
+}
+.section3-measures-legend{
+  #border-bottom: 5px solid rgb(246, 77, 1);
+  #border-left: 5px solid rgb(246, 77, 1);
+  #border-right: 5px solid rgb(246, 77, 1);
+  #border-radius: 50%;
+  #z-index: 4;
+}
+.legend-border{
+  position:     relative;
+  width:        105px;
+  height:             var(--legend-container-height);
+  top:           calc((var(--legend-container-height) / 2) - 2.5px);
+  border-bottom: 5px solid rgb(246, 77, 1);
+  border-left: 5px solid rgb(246, 77, 1);
+  border-right: 5px solid rgb(246, 77, 1);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  overflow-y: visible;
+}
+.legend-border-green{
+  position:     relative;
+  width:        105px;
+  height:             var(--legend-container-height);
+  top:           calc((var(--legend-container-height) / 2) - 2.5px);
+  border-bottom: 5px solid rgb(98, 189, 31);
+  border-left: 5px solid rgb(98, 189, 31);
+  border-right: 5px solid rgb(98, 189, 31);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  overflow-y: visible;
+}
+.section3-measures-img{
+  position: relative;
+  z-index: -1;
+}
+.section3-text{
+  line-height: 1.5;
+}
+.measures-img-1{
+  top: -50px;
+  width: 105px;
+  height: 65px;
+}
+.measures-img-2{
+  top: -75px;
+  left: -20px;
+  width: 141px;
+  height: 105px;
+}
+.measures-img-3{
+  top: -27px;
+    left: 8px;
+  height: 44px;
+  width: 77px;
+}
+.folk-medicine{
+  position: relative;
+  text-align: center;
+  top: -14px;
+  line-height: 1;
+}
+.section3-subheader{
+  margin-top: 32px;
+  background: linear-gradient(to left, #62bd1f, #f64d01);
+  border-radius: 15px;
+  height: 102px;
+  width: 873px;
+}
+
+.section3-subheader-filler{
+  display: flex;
+  justify-content: center;
+  left: 5px;
+  top: 5px;
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  height: 92px;
+  width: 863px;
+}

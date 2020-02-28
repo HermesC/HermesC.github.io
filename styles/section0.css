@@ -1,0 +1,317 @@
+#section0{
+  display:             flex;
+  height:              var(--section-height);
+  background:          url("../res/Layer 0/background.png");
+  background-position: -500px 0;
+  background-size:     cover;
+  width:               100vw;
+  background-color:    #f3f9ff;
+  margin-bottom:       120px;
+}
+.opacity{
+  width:               100%;
+  height:              100%;
+  position:            absolute;
+}
+.section-wrapper{
+  width:               100vw;
+  height:              100%;
+  background:          url("../res/Layer 0/opacity.png") no-repeat;
+  background-size:     100% 100%;
+}
+.section0::after{
+  content:             '';
+  position:            absolute;
+  width:               100vw;
+  height:              109px;
+  background:          url("../res/Layer 0/waves.png");
+  z-index:             1;
+  bottom:              -90px;
+}
+.section0-major-photoset{
+  position:            relative;
+  left:                300px;
+}
+.group0{
+  position:            relative;
+  height:              100%;
+  width:               100%;
+}
+.section0-product-presentation-header{
+  width:               550px;
+}
+.round_circles{
+  position:            relative;
+}
+.circle {
+  background-image:    url("../res/Layer 0/Layer 8.png");
+  position:            absolute;
+  left:                -57px;
+  top:                 105px;
+  width:               540px;
+  height:              690px;
+  z-index:             1;
+}
+.inner_circle {
+  border-radius:       50%;
+  background-image:    url("../res/Layer 0/Layer5.png");
+  position:            absolute;
+  left:                0px;
+  top:                 162px;
+  width:               571px;
+  height:              572px;
+  z-index:             2;
+}
+.legs {
+  position:            absolute;
+  z-index:             3;
+  left:                -150px;
+
+}
+.pillsImageWrapper{
+  position:             absolute;
+  top:                  470px;
+  z-index:              3;
+}
+.pillsPrice{
+  position:             absolute;
+  z-index:              9;
+  font-size:            34px;
+  color:                white;
+}
+.pillsPricePos-1{
+  left:                 343px;
+}
+.pillsPricePos-2{
+  top:                  132px;
+  left:                 450px;
+}
+.pillsGrassImgWrapper{
+  position:             absolute;
+  top:                  480px;
+  left:                 260px;
+  z-index:              2;
+}
+.section0-infobar{
+  display:             flex;
+  position:            absolute;
+  left:                600px;
+  height:              70px;
+  margin-top:          20px;
+}
+.infobar-list{
+  display:             flex;
+  justify-content:     space-around;
+  white-space:         nowrap;
+  margin-left:         100px;
+  top:                 0px;
+  height:              40px;
+}
+.imgAndText{
+  display:            flex;
+  width:              auto;
+}
+.imgAndText p {
+  margin:              0px 10px 0px 15px;
+  font-size:           17px;
+  color:               #666666;
+  font-style:          italic;
+  padding: 0px;
+}
+.section0-product-presentation{
+  display:             flex;
+  flex-direction:      row;
+  position:            relative;
+  left:                925px;
+  top:                 100px;
+  width:               450px;
+}
+.section0-prodPresHeader-text{
+  color:               rgb(56, 51, 52);
+  line-height:         1.5;
+  font-weight:         800;
+}
+.section0-prodPresHeader-text p{
+  font-size:            60px;
+  margin-block-start:   0px;
+  margin-block-end:     0px;
+  margin-inline-start:  0px;
+  margin-inline-end:    0px;
+  line-height:          0.8;
+  margin-top:           1px;
+}
+.section0-prodDescription{
+  margin-top:          50px;
+  width:               450px;
+}
+.subsection0{
+  display:             flex;
+  flex-wrap:           wrap;
+  width:               100%;
+  height:              115px;
+}
+#subsection0-arrow{
+  position:            absolute;
+  left:                25px;
+  bottom:              125px;
+}
+.subsection0-text {
+  font-size:           22px;
+  color:               rgb(68, 68, 68);
+  line-height:         1.2;
+  text-align:          left;
+}
+#section0-prodDiscount {
+  width:               258px;
+}
+#section0-prodDiscount-text{
+  top:                 10px;
+  width:               174px;
+  height:              27px;
+  flex-direction:      row;
+}
+#section0-prodDiscount-legContent{
+  display:            flex;
+  padding:            10px;
+}
+#legend-wrapper{
+  margin-bottom:      70px;
+}
+#section0-prodDiscount-text-wrapper{
+    position:         relative;
+    border-bottom:    7px solid #a8ca3f;
+    border-left:      7px solid #a8ca3f;
+    border-right:     7px solid #a8ca3f;
+    border-radius:    0px 0px 15px 15px;
+    padding:          12px 10px 10px;
+    top:              18px;
+    background-color: #f3f9ff;
+}
+#section0-prodDiscount-text{
+  display:            flex;
+  flex-direction:     row;
+  left:               0px;
+  position:           relative;
+  top:                -12px;
+  width:              auto;
+  height:             27px;
+  z-index:            9;
+  height:             14px;
+}
+#section0-prodDiscount fieldset{
+  overflow:           hidden;
+  background-color:   #FFFFFF;
+  border:             7px solid #a8ca3f;
+  border-radius:      15px;
+  min-width:          220px;
+  text-align:         center;
+  position:           relative;
+  height:             100%;
+  padding:            0px;
+}
+#section0-priceText{
+  display:            flex;
+}
+#section0-discountDateExpire{
+  position:           relative;
+  font-size:          20px;
+  color:              rgb(0, 0, 0);
+  line-height:        1.1;
+  text-align:         center;
+}
+#crossedPriceImg{
+  position:           absolute;
+  left:               20px;
+  margin-top:         5px;
+}
+.oldPriceText {
+  left:               5px;
+  font-size:          34px;
+  color:              rgb(11, 11, 11);
+  flex-grow:          0.5;
+  line-height:        0.706;
+  line-height:        1;
+}
+#newPriceText {
+  flex-grow:         0.5;
+  font-size:         34px;
+  color:             rgb(0, 0, 0);
+  line-height:       0.706;
+  background-color:  rgb(255,188,2);
+  padding:           5px;
+  border-radius:     5px;
+}
+.oldPriceHeader {
+  font-size:         14px;
+  color:             rgb(102, 102, 102);
+  line-height:       1.714;
+  text-align:        center;
+}
+.newPriceHeader{
+  font-size:         14px;
+  color:             rgb(0, 0, 0);
+  line-height:       1.714;
+  text-align:        center;
+}
+.formPhoto{
+  width:       19px;
+  height:      23px;
+  position:    relative;
+  top:         42px;
+  left:        20px;
+}
+.form-input{
+    display: block;
+    width: auto;
+    background-color: rgb(238, 242, 247);
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 32px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    padding: 25px 25px 20px 55px;
+    margin-bottom: -12px;
+}
+.form-submit-wrapper{
+      background: linear-gradient(to right, #ffbe02, #ffcc02);
+      border-radius: 32px;
+      width:   var(--form-submit-width);
+      padding: 4px;
+      align-self: center;
+      margin-top: 25px;
+}
+.form-submit{
+    font-size: 28px;
+    font-weight: 700;
+    padding:9px 13px;
+    line-height: 15px;
+    border: 2px solid #ffd24e;
+    background: linear-gradient(to right, #ffbe02, #ffcc02);
+    border-radius: 32px;
+    width:           var(--form-submit-width);
+    cursor: url('../img/Cursor.cur'), pointer;
+}
+.form-small-text{
+  font-size: 16px;
+}
+.form-remains-text{
+
+}
+.form-green-text{
+  color:  #a8ca3f;
+}
+.form-dataProtection{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 5px;
+  background-color:    #eef2f7;
+  width:               100%;
+}
+.form-dataProtImg{
+}

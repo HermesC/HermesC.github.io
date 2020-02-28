@@ -1,0 +1,69 @@
+#section4{
+  display: flex;
+  flex-direction: column;
+  padding:      60px;
+  height: var(--section-height);
+  width: 100vw;
+  background-image: url('../res/Layer 2/background.png');
+}
+#section4::before{
+  position: absolute;
+  left: 0px;
+  margin-top: -80px;
+  content: "";
+  width:100%;
+  height: 60px;
+  background-image: url("../res/Layer 0/waves.png");
+  transform: rotateX(180deg);
+}
+.section4-text{
+  margin-bottom: 8
+        px;
+}
+.instructions{
+  margin-top: 30px;
+  height: 439px;
+  display: flex;
+  margin: 0px auto;
+}
+.instructions-explain{
+  height: 100%;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 27px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.instructions-explain-cell{
+  height: 250px;
+  display: flex;
+}
+.instructions-explain img{
+  position:       relative;
+  margin:         auto;
+}
+.instructions-img{
+  display:        flex;
+  width:          100px;
+  height:         100px;
+  border:         rgb(246, 77, 1) solid 5px;
+  border-radius:  50%;
+  box-shadow:     0px 0px 0px 7px rgb(229, 208, 185);
+  margin-bottom:  auto;
+  margin-top:     auto;
+}
+.explain-text {
+  position:       relative;
+  margin-left:    30px;
+  margin-bottom:  auto;
+  margin-top:     auto;
+}
+.explain-text::before{
+  content:          '';
+  position:         absolute;
+  left:             0px;
+  top:              -19px;
+  width:            20px;
+  height:           3px;
+  background-color: rgb(123, 191, 28);
+}

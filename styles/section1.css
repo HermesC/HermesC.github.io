@@ -1,0 +1,97 @@
+.section1{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: var(--section-height);
+}
+.section1-wrapper{
+  width: 75vw;
+}
+
+#section1-fungus-consequences{
+  display: flex;
+  justify-content: space-around;
+}
+.fungus-subsection{
+  display: flex;
+  flex-direction: column;
+}
+.fungus-subsection-visual{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.fungus-img{
+  border-radius: 50%;
+}
+.fungus-img-caption{
+  font-size: 22px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.fungus-subsection-text{
+  font-size: 18px;
+  text-align: left;
+  display: block;
+}
+.silver-bar{
+  margin-top: 20px;
+  margin-bottom: 7px;
+  height: 3px;
+  width: 50px;
+  background: #becbd8;
+}
+.fungus-semi-circle{
+  position: absolute;
+  margin-left: -19px;
+  margin-top: -21px;
+}
+.fungus-circle{
+  position: absolute;
+  margin-left: 130px;
+  z-index: 9;
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  vertical-align: bottom;
+
+}
+#fungus-circle-1{
+  background-color: rgb(236, 154, 106);
+}
+#fungus-circle-2{
+background-color: rgb(228, 118, 67);
+}
+#fungus-circle-3{
+background-color: rgb(236, 91, 25);
+}
+.statistics-legend{
+  padding-left: 50px;
+  z-index: 5;
+  padding-right: 50px;
+}
+.statistics-fieldset{
+  display: flex;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: rgb(244, 211, 187);
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 80px;
+  width: 1500px;
+}
+.statistics-text{
+
+  position: relative;
+  top: -25px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  line-height: 1.273;
+  text-align: center;
+}
