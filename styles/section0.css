@@ -1,32 +1,31 @@
+.section-wrapper{
+  max-width:               100vw;
+  height:              100%;
+  background:          url("../res/Layer 0/opacity.png") no-repeat;
+  background-size:     100% 100%;
+}
 #section0{
-  display:             flex;
   height:              var(--section-height);
   background:          url("../res/Layer 0/background.png");
   background-position: -500px 0;
   background-size:     cover;
-  width:               100vw;
+  width:               100%;
   background-color:    #f3f9ff;
   margin-bottom:       120px;
 }
 .opacity{
   width:               100%;
-  height:              100%;
+  height:              var(--section-height);
   position:            absolute;
 }
-.section-wrapper{
-  width:               100vw;
-  height:              100%;
-  background:          url("../res/Layer 0/opacity.png") no-repeat;
-  background-size:     100% 100%;
-}
-.section0::after{
+.section-wrapper::after{
   content:             '';
   position:            absolute;
-  width:               100vw;
-  height:              109px;
+  width:               100%;
+  top:                 calc(var(--section-height) - 20px);
+  height:              var(--waves-height);
   background:          url("../res/Layer 0/waves.png");
   z-index:             1;
-  bottom:              -90px;
 }
 .section0-major-photoset{
   position:            relative;

@@ -24,7 +24,7 @@
   margin-left:        20px;
   margin-right:       20px;
   width:              373px;
-  height:             330px;
+  min-height:             330px;
   border-radius:      15px;
   border-width:       5px;
 }
