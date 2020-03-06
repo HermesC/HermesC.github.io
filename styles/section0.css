@@ -1,16 +1,17 @@
 .section-wrapper{
-  display:             flex;
-  width: 95vw;
-  height:              100%;
+  width:               95vw;
+  height:              var(--section-height);
   background:          url("../res/Layer 0/opacity.png") no-repeat;
   background-size:     100% 100%;
+  margin-bottom:       150px;
 }
 #section0{
+  display:             flex;
   height:              var(--section-height);
   background:          url("../res/Layer 0/background.png");
   background-position: -500px 0;
   background-size:     cover;
-  width:               95vw;
+  width:               100%;
   background-color:    #f3f9ff;
   margin-bottom:       120px;
 }
