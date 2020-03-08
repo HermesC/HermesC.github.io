@@ -34,7 +34,7 @@ margin-bottom: 150px;
 }
 .section0-major-photoset{
   position: relative;
-  margin-left: 10vw;
+  margin-left: calc(50vw - 670px);
   width: 610px;
 }
 .group0{
