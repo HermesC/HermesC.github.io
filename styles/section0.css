@@ -122,7 +122,6 @@ margin-bottom: 150px;
 }
 .imgAndText p {
   margin:              0px 10px 0px 15px;
-  font-size:           17px;
   color:               #666666;
   font-style:          italic;
   padding: 0px;
@@ -249,13 +248,11 @@ margin-bottom: 150px;
   border-radius:     5px;
 }
 .oldPriceHeader {
-  font-size:         14px;
   color:             rgb(102, 102, 102);
   line-height:       1.714;
   text-align:        center;
 }
 .newPriceHeader{
-  font-size:         14px;
   color:             rgb(0, 0, 0);
   line-height:       1.714;
   text-align:        center;
@@ -304,9 +301,6 @@ margin-bottom: 150px;
 .form-small-text{
   font-size: 16px;
 }
-.form-remains-text{
-
-}
 .form-green-text{
   color:  #a8ca3f;
 }
@@ -323,7 +317,7 @@ margin-bottom: 150px;
 .form-dataProtImg{
 }
 @media screen and (max-width: 1550px) {
-  
+
   .section0-major-photoset{
     display:  none;
     position: relative;
@@ -342,6 +336,9 @@ margin-bottom: 150px;
     height:              70px;
     margin-top:          20px;
     left:                auto;
+  }
+  #section0-prodDiscount fieldset{
+    min-width:          300px;
   }
 }
 @media screen and (max-width: 990px) {

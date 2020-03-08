@@ -52,7 +52,12 @@ legend{
 .text-18px{
   font-size:          18px;
 }
-
+.text-16px{
+  font-size:          16px;
+}
+.text-14px{
+  font-size: 14px;
+}
 .flex-column-content{
   display:             flex;
   flex-direction:      column;
@@ -61,10 +66,7 @@ legend{
 .bold{
   font-weight:         700;
 }
-.headline{
-  font-size:           48px;
-  line-height:         48px;
-}
+
 .orange-text{
   color:               #fa4f01;
 }
@@ -73,12 +75,16 @@ legend{
   margin-right:        auto;
   text-align:          center;
 }
+.headline{
+  font-size:           48px;
+  line-height:         48px;
+}
 .section-subtitle{
   position:            relative;
   font-size:           24px;
   color:               rgb(43, 40, 40);
   font-weight:         bold;
-  line-height:         2.5;
+  line-height:         1.5;
 }
 .logo-and-text{
   left:                0px;
@@ -176,10 +182,27 @@ legend{
     font-size:          42px;
   }
   .text-20px{
-    font-size:          40px;
+    font-size:          25px;
   }
   .text-18px{
-    font-size:          38px;
+    font-size:          23px;
+  }
+  .text-16px{
+    font-size:          20px;
+  }
+  .text-14px{
+    font-size:          19px;
+  }
+  .headline{
+    font-size:           55px;
+    №line-height:         48px;
+  }
+  .section-subtitle{
+    position:            relative;
+    font-size:           44px;
+    color:               rgb(43, 40, 40);
+    font-weight:         bold;
+    line-height:         1.5;
   }
 
 }
