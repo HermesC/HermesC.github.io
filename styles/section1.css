@@ -36,9 +36,9 @@
   margin-bottom: auto;
 }
 .fungus-subsection-text{
-  font-size: 18px;
   text-align: left;
   display: block;
+  width:   274px;
 }
 .silver-bar{
   margin-top: 20px;
@@ -88,4 +88,18 @@ background-color: rgb(236, 91, 25);
 }
 @media screen and (max-width: 1030px) {
 
+}
+#fungus-viewport{
+  position: relative;
+  display: flex;
+  width:    400px;
+  background-color: silver;
+}
+#arrow_left{
+  position: absolute;
+  width: 50px;
+}
+#arrow_right{
+  position: absolute;
+  width: 50px;
 }
