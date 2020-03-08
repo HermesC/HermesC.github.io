@@ -86,3 +86,6 @@ background-color: rgb(236, 91, 25);
   line-height: 1.273;
   text-align: center;
 }
+@media screen and (max-width: 1030px) {
+
+}

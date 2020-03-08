@@ -343,3 +343,15 @@ margin-bottom: 150px;
     left:                auto;
   }
 }
+@media screen and (max-width: 990px) {
+  .logo-and-text{
+    display: none;
+  }
+  .section0-infobar{
+    display:             flex;
+    position:            relative;
+    height:              70px;
+    margin-top:          20px;
+    left:                -95px;
+  }
+}
