@@ -34,7 +34,7 @@ margin-bottom: 150px;
 }
 .section0-major-photoset{
   position: relative;
-  margin-left: 250px;  
+  margin-left: 10vw;
   width: 610px;
 }
 .group0{
@@ -106,6 +106,7 @@ margin-bottom: 150px;
   position:            relative;
   height:              70px;
   margin-top:          20px;
+  left:               -319px;
 }
 .infobar-list{
   display:             flex;
