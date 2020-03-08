@@ -1,19 +1,22 @@
 .section-wrapper{
-  width:               95vw;
-  height:              var(--section-height);
-  background:          url("../res/Layer 0/opacity.png") no-repeat;
-  background-size:     100% 100%;
-  margin-bottom:       150px;
+  width: 100%;
+height: var(--section-height);
+background: url(../res/Layer 0/opacity.png) no-repeat;
+background-size: 100% 100%;
+margin-bottom: 150px;
 }
 #section0{
-  display:             flex;
-  height:              var(--section-height);
-  background:          url("../res/Layer 0/background.png");
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: var(--section-height);
+  background: url("../res/Layer 0/background.png");
   background-position: -500px 0;
-  background-size:     cover;
-  width:               100%;
-  background-color:    #f3f9ff;
-  margin-bottom:       120px;
+  background-size: cover;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #f3f9ff;
+  margin-bottom: 120px;
 }
 .opacity{
   width:               100%;
@@ -30,8 +33,9 @@
   z-index:             1;
 }
 .section0-major-photoset{
-  position:            relative;
-  left:                10vw;
+  position: relative;
+  margin-left: 250px;  
+  width: 610px;
 }
 .group0{
   position:            relative;
@@ -70,7 +74,7 @@
 
 }
 .pillsImageWrapper{
-  position:             absolute;
+  position:             relative;
   top:                  470px;
   z-index:              3;
 }
@@ -93,10 +97,13 @@
   left:                 260px;
   z-index:              2;
 }
+.section0-info-container{
+  display:              flex;
+  flex-direction:       column;
+}
 .section0-infobar{
   display:             flex;
-  position:            absolute;
-  left:                calc(10vw + 500px);
+  position:            relative;
   height:              70px;
   margin-top:          20px;
 }
@@ -123,8 +130,6 @@
   display:             flex;
   flex-direction:      row;
   position:            relative;
-  left:                calc(10vw + 800px);
-  top:                 100px;
   width:               450px;
 }
 .section0-prodPresHeader-text{
