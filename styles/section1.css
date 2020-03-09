@@ -13,12 +13,11 @@
 
 #section1-fungus-consequences{
   display:         flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .fungus-subsection{
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
+  min-width: 400px;
+  padding-left: 30px;
 }
 .fungus-subsection-visual{
   margin-top: 40px;
@@ -85,21 +84,4 @@ background-color: rgb(236, 91, 25);
   color: rgb(0, 0, 0);
   line-height: 1.273;
   text-align: center;
-}
-@media screen and (max-width: 1030px) {
-
-}
-#fungus-viewport{
-  position: relative;
-  display: flex;
-  width:    400px;
-  background-color: silver;
-}
-#arrow_left{
-  position: absolute;
-  width: 50px;
-}
-#arrow_right{
-  position: absolute;
-  width: 50px;
 }

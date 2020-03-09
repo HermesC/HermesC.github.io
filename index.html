@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="styles/section3.css">
 <link rel="stylesheet" href="styles/section4.css">
 <link rel="stylesheet" href="styles/mediaQueries.css">
+<script src="js/scripts.js"></script>
 </head>
 <body>
   <div class="section-wrapper">
@@ -154,7 +155,6 @@
       </div>
       <div id="section1-fungus-consequences">
         <div class="fungus-subsection">
-          <!--<div class="arrow-left"><button>Left</button><div class="arrow-right"><button>right</button></div></div>-->
           <div class="fungus-subsection-visual">
             <div id="fungus-circle-1"class="fungus-circle">1</div>
                 <img id="fungus-semi-circle-1"class="fungus-semi-circle" src="res/Layer 1/semi-circle-shade-1.png">
@@ -166,7 +166,6 @@
           <p class="fungus-subsection-text text-18px"><span>Может появится сильная реакция на на привычную пищу, одежду, средства гигиены</span></p>
 
         </div>
-        <!--<div class="arrow"><button>Left</button><button>right</button></div>-->
         <div class="fungus-subsection">
 
           <div class="fungus-subsection-visual">
@@ -178,7 +177,6 @@
           </div>
           <div class="silver-bar"></div>
           <p class="fungus-subsection-text text-18px"><span>После полного разрушения ногтя грибок распространяется на палец, что приводит к его ампутации</span></p>
-          <div class="arrow-right"><button>Right</button></div>
         </div>
         <div class="fungus-subsection">
           <div class="fungus-subsection-visual">
@@ -366,42 +364,4 @@
   </div>
 </div>
 </body>
-<script>
-window.onload = ()=>{
-  if (document.documentElement.clientWidth < 1000){
-  let parentFungus  = document.getElementById("section1-fungus-consequences");
-  console.log(parentFungus.children.length);
-  //contents of the fungus section
-  let childrenFungus = parentFungus.children;
-  let length = childrenFungus.length;
-  //Creating the main viewport
-  let viewport = document.createElement('div');
-  for (let elem of Object.keys(childrenFungus)) viewport.append(childrenFungus[elem]);
-  while(parentFungus.firstChild){
-    if (parentFungus.firstChild) parentFungus.firstChild.remove();
-  }
-  let view_width = 400;
-  viewport.id = "fungus-viewport";
-  //creating the switching buttons
-  let arrow_left = document.createElement('button');
-  let arrow_right = document.createElement("button");
-  arrow_right.id = "arrow_right";
-  arrow_right.value = "LEFT";
-  arrow_right.value  = "RIGHT";
-  arrow_left.id  = "arrow_left";
-  arrow_left.style.left =
-  arrow_left.onclick = ()=>{
-    viewport.style.left = parseFloat(viewport.style.left) + view_width + "px";
-  }
-  arrow_right.onclick = ()=>{
-    viewport.style.left = parseFloat(viewport.style.left) - view_width + "px";
-  }
-
-  viewport.append(arrow_left);
-  viewport.append(arrow_right);
-
-  parentFungus.append(viewport);
-}
-};
-</script>
 </html>

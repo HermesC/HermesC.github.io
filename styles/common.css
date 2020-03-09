@@ -5,6 +5,7 @@
   --section0-dynamic-margin:   350px;
   --legend-container-height:   46px;
   --waves-height:              109px;
+  --arrows-border-color:       rgb(244, 211, 187);
 }
 p{
   margin-bottom:       10px;
@@ -21,8 +22,8 @@ body{
   width:               100vw;
 }
 *{
-  -webkit-box-sizing: border-box;
   margin:             0px;
+  padding: 0px;
   box-sizing:         border-box;
 }
 legend{
@@ -165,21 +166,38 @@ legend{
   width:     80vw;
   margin-bottom: 100px;
 }
-.arrow-left{
+.buttonStyle{
   position: relative;
-  margin-right: auto;
-  top:50%;
-}
-.arrow-right{
-  position: relative;
-  margin-left: auto;
-  //top:50%;
-}
-.arrow{
-  disabled: true;
-  position: absolute;
   display: flex;
-  justify-content: space-between;
-  width: 400px;
-  top: 50%;
+  background-color: white;
+  width: 50px;
+  border: none;
+  outline: none;
+  align-self: center;
+}
+.buttonStyle:hover{
+  background-color: #f5f5f5;
+}
+#arrowLeftDec{
+  position: relative;
+  left: 13px;
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid var(--arrows-border-color);
+  border-left: 2px solid var(--arrows-border-color);
+  transform: rotate(45deg);
+}
+#arrowRightDec{
+  position: relative;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-bottom: 2px solid var(--arrows-border-color);
+  border-right: 2px solid var(--arrows-border-color);
+  transform: rotate(-45deg);
+}
+#viewport{
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
 }

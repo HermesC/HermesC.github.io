@@ -87,20 +87,7 @@
     margin-top:          20px;
     left:                -95px;
   }
-  #section1-fungus-consequences {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    width: 400px;
-    overflow-x: hidden;
-}
-.fungus-subsection{
-  display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+
 .arrow{
   display:block;
 }
