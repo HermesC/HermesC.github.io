@@ -55,21 +55,17 @@ function ifSmallSreenWidth () {
 }
 function diminishChildren (root) {
   if (!viewport) {
-    const root = document.getElementById('section1-fungus-consequences')
     let children
     if (root) children = root.children
     else throw new Error('window.onload: root is undefined!')
     viewport = createScrollableViewport(root, children, 'buttonStyle', 'buttonStyle')
   }
 }
-function extendChildren () {
+function extendChildren (viewport, root, childrenToRemove) {
   if (viewport) {
-    const root = document.getElementById('section1-fungus-consequences')
-    const rootToRemove = root.getElementsByTagName('button')
     //  DELETE THE BUTTONS
-    console.log(rootToRemove)
-    while (rootToRemove[0]) {
-      rootToRemove[0].remove()
+    while (childrenToRemove[0]) {
+      childrenToRemove[0].remove()
     }
     //  INSERT ELEMENTS WITH CONTENTS INTO THE PARENT CONTAINER
     while (viewport.firstChild) root.append(viewport.firstChild)
@@ -78,6 +74,20 @@ function extendChildren () {
     viewport = undefined
   }
 }
-window.onload = executer(ifSmallSreenWidth, diminishChildren, extendChildren)
+window.onload = () => {
+  return function () {
+    const rootSection1 = document.getElementById('section1-fungus-consequences')
+    const rootSection2 = document.querySelector('section2-false-medicines')
+    executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
+    executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
+  }
+}
 
-window.onresize = executer(ifSmallSreenWidth, diminishChildren, extendChildren)
+window.onresize = () => {
+  return function () {
+    const rootSection1 = document.getElementById('section1-fungus-consequences')
+    const rootSection2 = document.querySelector('section2-false-medicines')
+    executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
+    executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
+  }
+}
