@@ -75,18 +75,21 @@ function extendChildren (viewport, root, childrenToRemove) {
   }
 }
 window.onload = () => {
-  return function () {
-    const rootSection1 = document.getElementById('section1-fungus-consequences')
-    const rootSection2 = document.querySelector('section2-false-medicines')
-    executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
-    executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
-  }
+  const rootSection1 = document.getElementById('section1-fungus-consequences')
+  const rootSection2 = document.querySelector('section2-false-medicines')
+  console.log('rootSection1' + rootSection1)
+  executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
+  // FIXME: executer does not work on section 2 properly, fix it
+  executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
+  console.log("rootSection2.querySelectorAll('section2-false-medicines-fieldset')" + rootSection2.querySelectorAll('section2-false-medicines-fieldset'))
 }
 
+// window.onload = executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
+
 window.onresize = () => {
+  const rootSection1 = document.getElementById('section1-fungus-consequences')
+  const rootSection2 = document.querySelector('section2-false-medicines')
   return function () {
-    const rootSection1 = document.getElementById('section1-fungus-consequences')
-    const rootSection2 = document.querySelector('section2-false-medicines')
     executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
     executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
   }
