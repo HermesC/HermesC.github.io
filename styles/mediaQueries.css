@@ -59,15 +59,15 @@
      font-size:          19px;
    }
    .headline{
-     font-size:           55px;
+     font-size:           34px;
      №line-height:         48px;
    }
    .section-subtitle{
      position:            relative;
-     font-size:           44px;
+     font-size:           25px;
      color:               rgb(43, 40, 40);
      font-weight:         bold;
-     line-height:         1.5;
+     line-height:         0.8;
    }
 }
 @media screen and (max-width: 1200px) {
@@ -91,4 +91,29 @@
 .arrow{
   display:block;
 }
+}
+@media screen and (max-width: 1310px) {
+  .fungus-subsection{
+    width: 60vw;
+
+  }
+  .fungus-img{
+    width: 300px;
+    height: 300px;
+  }
+  .fungus-img-caption {
+    width: 100%;
+    color: rgb(239, 191, 161);
+    margin-bottom: 15px;
+    margin-left: auto;
+  }
+  #fungus-semi-circle-1, .fungus-circle{
+    display: none;
+  }
+  .fungus-subsection-text{
+    width: 100%;
+  }
+  .fungus-subsection-visual{
+    flex-direction: column;
+  }
 }

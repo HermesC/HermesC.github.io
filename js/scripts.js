@@ -1,6 +1,19 @@
 //  **************GLOBAL VARIABLES
 let viewport
 const actionWidth = 1310
+function fungusSubsectionTransform (children) {
+  console.log('children.length = ' + children.length)
+  console.log('children = ' + children)
+  for (let i = 0; i < children.length; i++) {
+    const elemToTop = children[i].firstElementChild.querySelector('.fungus-img-caption')
+    console.log('elemToTop = ' + elemToTop)
+    if (elemToTop) {
+      console.log('elemToTop.textContent = ' + elemToTop.textContent)
+      elemToTop.textContent = elemToTop.textContent
+      children[i].firstElementChild.prepend(elemToTop)
+    } else throw new Error('fungusSubsectionTransform: elemToTop is null!')
+  }
+}
 function createScrollableViewport (root, children, button1Style = '', button2Style = '') {
   //  Common variables corresponding to width, height etc.
   //  Needed to set up viewport and child elements correctly
@@ -8,7 +21,9 @@ function createScrollableViewport (root, children, button1Style = '', button2Sty
   const viewHeight = children[0].offsetHeight
   //  Creating the main viewport and setting it up
   const viewport = document.createElement('div')
+  fungusSubsectionTransform(root.children)
   while (children[0]) viewport.append(children[0])
+  console.log('root.children = ' + root.children)
   viewport.id = 'viewport'
   viewport.style.width = viewWidth + 'px'
   viewport.style.height = viewHeight + 'px'
@@ -46,24 +61,32 @@ function executer (condition, callbackTrue, callbackFalse) {
   return function () {
     if (condition()) {
       callbackTrue()
-    } else { callbackFalse() }
+    } else {
+      callbackFalse()
+    }
   }
 }
 function ifSmallSreenWidth () {
   if (document.documentElement.clientWidth < actionWidth) return true
   else return false
 }
-function diminishChildren (root) {
+function diminishChildren () {
+  console.log('diminishChildren: enter')
   if (!viewport) {
+    const root = document.getElementById('section1-fungus-consequences')
     let children
     if (root) children = root.children
     else throw new Error('window.onload: root is undefined!')
     viewport = createScrollableViewport(root, children, 'buttonStyle', 'buttonStyle')
   }
+  console.log('diminishChildren: exit')
 }
-function extendChildren (viewport, root, childrenToRemove) {
+function extendChildren () {
+  console.log('extendChildren: enter')
   if (viewport) {
     //  DELETE THE BUTTONS
+    const root = document.getElementById('section1-fungus-consequences')
+    const childrenToRemove = root.getElementsByTagName('button')
     while (childrenToRemove[0]) {
       childrenToRemove[0].remove()
     }
@@ -73,24 +96,26 @@ function extendChildren (viewport, root, childrenToRemove) {
     viewport.remove()
     viewport = undefined
   }
+  console.log('extendChildren: exit')
 }
-window.onload = () => {
+/*window.onload = () => {
   const rootSection1 = document.getElementById('section1-fungus-consequences')
-  const rootSection2 = document.querySelector('section2-false-medicines')
-  console.log('rootSection1' + rootSection1)
+  //const rootSection2 = document.querySelector('section2-false-medicines')
+  //console.log('rootSection1' + rootSection1)
   executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
   // FIXME: executer does not work on section 2 properly, fix it
-  executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
-  console.log("rootSection2.querySelectorAll('section2-false-medicines-fieldset')" + rootSection2.querySelectorAll('section2-false-medicines-fieldset'))
-}
-
+  //  executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
+  //console.log("rootSection2.querySelectorAll('section2-false-medicines-fieldset')" + rootSection2.querySelectorAll('section2-false-medicines-fieldset'))
+}*/
+window.onload = executer(ifSmallSreenWidth, diminishChildren, extendChildren)
 // window.onload = executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
 
-window.onresize = () => {
+/*window.onresize = () => {
   const rootSection1 = document.getElementById('section1-fungus-consequences')
-  const rootSection2 = document.querySelector('section2-false-medicines')
+  //const rootSection2 = document.querySelector('section2-false-medicines')
   return function () {
-    executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
-    executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
+    //executer(ifSmallSreenWidth, diminishChildren(rootSection1), extendChildren(viewport, rootSection1, rootSection1.querySelectorAll('button')))
+    //  executer(ifSmallSreenWidth, diminishChildren(rootSection2), extendChildren(viewport, rootSection2, rootSection2.querySelectorAll('section2-false-medicines-fieldset')))
   }
 }
+*/
